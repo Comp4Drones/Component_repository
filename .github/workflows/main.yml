@@ -19,8 +19,32 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    - name: new pip
+      run: pip3 install --user --upgrade pip &&
+           export PATH="$HOME/.local/bin:$PATH"
+      
+    - name: Install tag plugin
+      run: pip3 install setuptools
+      
+    - name: Install pyYAML
+      run: pip3 install --ignore-installed PyYAML
+    
+    - name: Install MkDocs
+      run: pip3 install mkdocs
+    
+    - name: test mkdocs
+      run: $HOME/.local/bin/mkdocs --version
+      
+    - name: Install mkdocs dependencies
+      run: pip3 install git+https://github.com/jldiaz/mkdocs-plugin-tags.git && 
+           pip3 install mkdocs-material
+   
+    - name: Deploy
+      run: $HOME/.local/bin/mkdocs gh-deploy --clean
+           
 
-    - name: Deploy MkDocs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@1.11
-      env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+    #- name: Deploy MkDocs
+    #  uses: mhausenblas/mkdocs-deploy-gh-pages@1.11
+    #  env:
+    #      GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
