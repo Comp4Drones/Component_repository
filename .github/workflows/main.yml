@@ -41,7 +41,7 @@ jobs:
            pip3 install mkdocs-material
    
     - name: Deploy
-      run: $HOME/.local/bin/mkdocs gh-deploy --clean
+      run: $HOME/.local/bin/mkdocs gh-deploy --clean  --force
            
 
     #- name: Deploy MkDocs
