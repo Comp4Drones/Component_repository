@@ -85,5 +85,5 @@ The modularity of the airborne architecture (see Figure 3) also enables users to
 <p align="center">Figure 3</p>
 <br/>
 
-Paparazzi also has a simulator based on JSBSim. The autopilot can be built for both the hardware target and the simulator target. The simulator then uses the same code that will run on the real hardware. Custom modules that use platform specific capabilities must provide alternative code in order to be built for another target, such as the simulator.
+Paparazzi also has a simulator based on [JSBSim](http://www.jsbsim.org). The autopilot can be built for both the hardware target and the simulator target. The simulator then uses the same code that will run on the real hardware. Custom modules that use platform specific capabilities must provide alternative code in order to be built for another target, such as the simulator.
 
