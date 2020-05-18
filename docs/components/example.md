@@ -18,7 +18,8 @@ KET:
 - __KET:__
 - __Contact:__ _john@doe.com_
 
-# Description
+
+## Description
 
 _What is your component ? Explain clearly what is it and its purpose._
 
@@ -35,14 +36,14 @@ An SDK is provided to program the BigFlop with your own software. The SDK includ
 - an other amazing  stuff
 
 
-## Current state
+### Current state
 
 _What is the current state of this component?_
 
 A prototype development version of the BigFlop is currently beeing produced, and the SDK is started.
 
 
-## Improvements
+### Improvements
 
 _What improvements will you bring during the time of the C4D project?_
 
