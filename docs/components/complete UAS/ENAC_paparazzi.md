@@ -17,7 +17,7 @@ KET:
 - __ID:__ WP3-13
 - __Contributor:__ ENAC
 - __Owner:__ 
-- __Licence:__ GPLv3
+- __Licence:__ GPL
 - __expected TRL:__ 5
 - __KET:__ Intelligent mission management, Intelligent outer loop control, Take-off, Landing, Planning and scheduling, Fail-safe mission
 - __Contact:__ _fabien.bonneval@enac.fr_
