@@ -3,9 +3,27 @@ title: Paparazzi
 tags:
   - architecture
   - paparazzi
+KET:
+  - Intelligent mission management
+  - Intelligent outer loop control
+  - Take-off
+  - Landing
+  - Planning and scheduling
+  - Fail-safe mission
 ---
 
 # Paparazzi UAV
+
+- __ID:__ WP3-13
+- __Contributor:__ ENAC
+- __Owner:__ 
+- __Licence:__ GPLv3
+- __expected TRL:__ 5
+- __KET:__ Intelligent mission management, Intelligent outer loop control, Take-off, Landing, Planning and scheduling, Fail-safe mission
+- __Contact:__ _fabien.bonneval@enac.fr_
+
+
+## Description
 
 Paparazzi is a complete system of open source hardware and software for Unmanned Aircraft Systems (UAS), including both the airborne autopilot as well as complete ground station mission planning and monitoring software utilizing a bi-directional datalink for telemetry and control.
 
@@ -13,8 +31,24 @@ Paparazzi has been created at ENAC in 2003, and is now supported by other instit
 
 The Paparazzi system was initially designed for robust small fixed-wing aircrafts in 2003, but it now support several other configurations and concepts such as high-aspect ratio gliders, multi-rotors, transitioning vehicles, and rovers. Today, Paparazzi flies on 16cm Quark up to 4.3 meter spanned Adler UAV from University of Stuttgart. The popular UAV platform Bebop2 from Parrot2 can also be used to run the Paparazzi software.
 
+See the [Wiki](http://wiki.paparazziuav.org/wiki/Main_Page) and the [Github repository](https://github.com/paparazzi/paparazzi/).
 
-# Overview
+
+### Current state
+
+Paparazzi is a running, working project, but it lacks some tools to make it more stable.
+
+
+### Improvements
+
+The methods coming from the WP6 will be applied to the paparazzi architecture and its modules.
+Standards and use case from WP2 and WP1 will also be taken into account.
+
+
+
+
+
+## Overview
 
 ![plop](../../img/paparazzi_overview.jpg)
 <p align="center">Figure 1</p>
@@ -28,7 +62,7 @@ The global view of the system (see figure 1) is very typical of UAV systems:
 - Safety link: safety remote control that can be separated from the ground station for short range direct control.
 
 
-# System architecture
+## System architecture
 
 ![plop](../../img/paparazzi_communication.png)
 <p align="center">Figure 2</p>
@@ -65,19 +99,19 @@ There are four ways to extend Paparazzi functionalities:
 
 A combination of these options can be used at the same time to achieve specific goals.
 
-## Using Pprzlink with the ground station
+### Using Pprzlink with the ground station
 
 The easier way to interact with Paparazzi is to create a new agent as part of the ground station. All parameters and configuration files are easily accessible, making it easy to interact with the drone or display new data on the GCS. As example, the Interactive Informatics team of ENAC used it to design novel human-drone interactions for safety pilots and adaptable interactions for pilots with disabilities. 
 
-## Using Pprzlink without the ground station
+### Using Pprzlink without the ground station
 
 It is also possible to use Pprzlink on the ground by interacting directly with the datalink. This approach gives less high-level services but makes it simpler to exchange custom messages.
 
-## Adding a dedicated board on the drone
+### Adding a dedicated board on the drone
 
 Custom dedicated boards (Raspberry or Arduino for instance) can be integrated in the drone and interact with the autopilot through a local link, typically a serial interface between the dedicated board and the autopilot. The type of interaction is the same than with a ground agent. 
 
-## Adding a module to the autopilot itself
+### Adding a module to the autopilot itself
 
 The modularity of the airborne architecture (see Figure 3) also enables users to write custom modules that will run on the autopilot itself. All sensors data, payload or actuators are then available to this module. Modules are the building blocks of the airborne architecture. These modules can do various things such as handling a specific sensor connected to the autopilot, enhance navigation capabilities, implement custom stabilization or guidance control loops...
 
