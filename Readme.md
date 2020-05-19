@@ -1,4 +1,4 @@
-# Comp4DRones Component Repository
+# Comp4Drones Component Repository
 
 This repository aim at providing the D3.5: _Components repository_ associated with the task T3.3: _Generic components for drones_ of the [Comp4DRones](https://www.comp4drones.eu/) project.
 
