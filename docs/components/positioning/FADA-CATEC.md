@@ -1,5 +1,6 @@
 ---
 title: FADA-CATEC - Indoor positioning module
+componentId: WP3-30
 tags:
   - positioning
   - LIDAR
@@ -10,6 +11,14 @@ tags:
 WP3-30
 
 # Multi-sensor positioning
+
+- __ID:__ WP3-30
+- __Contributor:__ FADA-CATEC
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 - Storage of the raw data from the LIDAR that provide the environment point cloud
 - Detect obstacles by preventing flight to these obstacles 

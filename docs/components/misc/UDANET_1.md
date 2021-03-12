@@ -1,5 +1,6 @@
 ---
 title: UDANET - Smart and predictive energy management system
+componentId: WP3-36_1
 tags:
   - energy management
   - navigation
@@ -8,6 +9,14 @@ tags:
 WP3-36_1
 
 # Smart and predictive energy management system
+
+- __ID:__ WP3-36_1
+- __Contributor:__ UDANET
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 ## Objective
 

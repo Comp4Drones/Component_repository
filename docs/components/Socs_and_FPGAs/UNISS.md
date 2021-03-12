@@ -1,5 +1,6 @@
 ---
 title: UNISS - Onboard Compute Platform Design Paradigm
+componentId: WP3-28
 tags: hardware
 KET: Data Fusion & Processing
 ---

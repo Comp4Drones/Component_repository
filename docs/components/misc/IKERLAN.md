@@ -1,5 +1,6 @@
 ---
 title: IKERLAN - Safety function - Pre-Certified SOM
+componentId: WP3-01
 tags:
   - Detect and Avoid
   - LIDAR
@@ -8,6 +9,14 @@ tags:
 WP3-01
 
 # Safety function - Pre-Certified SOM
+
+- __ID:__ WP3-01
+- __Contributor:__ IKERLAN
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 Analysis of current Safety Standards will be done, and appropriate Safety Concept will be conducted on the development of the HW/SW elements necessary to execute the Safety Function.
 

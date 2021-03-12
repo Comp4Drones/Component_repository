@@ -1,5 +1,6 @@
 ---
 title: TUE - A compact, lightweight platform (MPSOC FPGA-based, incl. RTOS)
+componentId: WP3-08*
 tags:
   - hardware
   - ROS2
@@ -8,6 +9,14 @@ tags:
 WP3-08\_1 and WP3-08\_2
 
 # A compact, lightweight platform (MPSOC FPGA-based, incl. RTOS)
+
+- __ID:__ WP3-08*
+- __Contributor:__ TUE
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 ## hardware
 

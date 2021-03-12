@@ -1,5 +1,6 @@
 ---
 title: IFAT - Component for trusted communication
+componentId: WP3-10
 tags:
   - security
 ---
@@ -7,6 +8,14 @@ tags:
 WP3-10
 
 # Component for trusted communication
+
+- __ID:__ WP3-10
+- __Contributor:__ IFAT
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 IFAT is developing a hardware-security-component (WP5), typically denoted as "Secure Element", and corresponding generic Software-Libraries (WP3). Both parts (HW+SW) combined will be then prepared (as reference-demo) to be integrated by future drone-system-integration partners to raise the overall trustworthiness of their (maybe already existing) communication sub-architecture. Therefore, this component is seen as one important sub-component contributing to an overall _"trusted communication architecture"_.
 

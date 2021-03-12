@@ -1,5 +1,6 @@
 ---
 title: ENSMA - Multi-agent swarm control
+componentId: WP3-14_2
 tags:
   - swarm
 KET: 

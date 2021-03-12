@@ -1,5 +1,6 @@
 ---
 title: UWB - Autonomous drone battery management
+componentId: WP3-26
 tags:
   - plop
 ---
@@ -7,6 +8,14 @@ tags:
 WP3-26
 
 # Droneport: an autonomous drone battery management system
+
+- __ID:__ WP3-26
+- __Contributor:__ UWB
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 Droneport (DP) is a complex system for autonomous drone battery management. It can either change battery packs or fast charge small drones. 
 

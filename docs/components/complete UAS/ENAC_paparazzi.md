@@ -1,5 +1,6 @@
 ---
 title: Paparazzi
+componentId: WP3-13
 tags:
   - architecture
   - paparazzi

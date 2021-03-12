@@ -1,5 +1,6 @@
 ---
 title: HIB - Computer Vision Components for drones
+componentId: WP3-04
 tags:
   - architecture
   - hardware
@@ -8,6 +9,14 @@ tags:
 ---
 
 # Computer Vision Components for drones
+
+- __ID:__ WP3-04
+- __Contributor:__ HIB
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 AI system built upon deep learning techniques in order to improve the way of interpreting surroundings and detecting scenarios from data captured with drones
 

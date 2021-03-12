@@ -1,5 +1,6 @@
 ---
 title: ENSMA - Control components that implement potential barriers
+componentId: WP3-14_1
 tags:
   - geofencing
   - navigation

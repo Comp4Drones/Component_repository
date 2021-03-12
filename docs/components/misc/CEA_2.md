@@ -1,5 +1,6 @@
 ---
-title: CEA - Reference Architecture Modelling and Code Generation 
+title: CEA - Reference Architecture Modelling and Code Generation
+componentId: WP3-32_2
 tags:
   - code generation
 ---

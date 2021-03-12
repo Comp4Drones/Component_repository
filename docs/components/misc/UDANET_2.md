@@ -1,12 +1,19 @@
 ---
 title: UDANET - AI drone system modules
-tags:
-  - plop
+componentId: WP3-36_2
 ---
 
 WP3-36_2
 
 # AI drone system modules
+
+- __ID:__ WP3-36_2
+- __Contributor:__ UDANET
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 ## Objective
 

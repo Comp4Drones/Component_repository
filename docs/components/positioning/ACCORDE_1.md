@@ -1,5 +1,6 @@
 ---
 title: ACCORDE - UWB based indoor positioning
+componentId: WP3-15_1
 tags:
   - hardware
   - positioning
@@ -9,6 +10,14 @@ tags:
 WP3-15_1
 
 # UWB based indoor positioning
+
+- __ID:__ WP3-15_1
+- __Contributor:__ ACCORDE
+- __Owner:__ 
+- __Licence:__
+- __expected TRL:__
+- __KET:__
+- __Contact:__
 
 Decawave based indoor positioning module
 
