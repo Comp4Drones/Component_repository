@@ -13,8 +13,8 @@
 | WP3-13 | ENAC | [Paparazzi UAV](components/complete UAS/ENAC_paparazzi.md) |
 | WP3-14_1 | ENSMA | [Control components that implement potential barriers](components/misc/ENSMA_1.md) |
 | WP3-14_2 | ENSMA | [Multi-agent swarm control](components/misc/ENSMA_2.md) |
-| WP3-15_1 | ACCORDE | [UWB based indoor positioning](components/positioning/ACCORDE_1.md) |
-| WP3-15_2 | ACCORDE | [Multi-antenna GNSS/INS based navigation](components/positioning/ACCORDE_2.md) |
+| WP3-15_1, WP4-17, WP5-19 | ACORDE | [UWB based indoor positioning](components/positioning/ACORDE_1.md) |
+| WP3-15_2, WP4-16, WP5-11 | ACORDE | [Multi-antenna GNSS/INS based navigation](components/positioning/ACORDE_2.md) |
 | WP3-16 | SCALIAN | [EZ_Chains SOA* Architecture](components/complete UAS/SCALIAN.md) |
 | WP3-19_1 | IMEC | [Hyperspectral payload](components/computer_vision_and_image_processing/IMEC_1.md) |
 | WP3-19_2 | IMEC | [Hyperspectral image processing](components/computer_vision_and_image_processing/IMEC_2.md) |
