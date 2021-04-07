@@ -27,3 +27,11 @@ The visual processing algorithm is specific to a design of helipad (on the right
 The component is based on a modular architecture that allows the users to configure which sensors are needed. With this conception, it is also easy to integrate a new type of sensor. It is then possible to fine tune the component to the use-case and its constraints.
 
 ![Visual processing pipeline](../../img/SCALIAN-ez_land.png)
+
+## EZ_Follow - Ground target following
+
+EZ_Follow is a mode of EZ_Land, it uses the algorithms to track and follow a ground target (the dedicated dronepad). Thanks to this mode, it is possible to build missions where a UAV take-off from a pad, follows it for a given time and lands back precisely.
+
+We have used this mode, on a tethered UAV carrying a camera, to construct a surveillance system very easy and convenient to deploy anywhere: a vehicle carries the pad on its back with the tethered UAV ready to take-off. When arrived where the inspection is required the UAV takes-off, then the vehicle can continue to drive slowly, the UAV will follow it. During the phase, the camera operator (or security personnel) can focus only on its mission, the inspection. Indeed the UAV maintains its altitude and position relative to the vehicle. When the mission is done, the UAV lands precisely on the back of the vehicle (the precision ensures that it will not fall off), finally the vehicle can move to the next inspection area. This system is called [Long-Eye](https://www.youtube.com/watch?v=8Ae1F2ioUsM).
+
+![EZ_Follow example](../../img/SCALIAN-long_eye.png)
