@@ -32,5 +32,5 @@
 
 | WP4-2 | SCALIAN | [EZ_Land Precision landing](components/positioning/SCALIAN-ez_land.md) |
 | WP4-5 | SCALIAN | [AI detection for clearance](components/computer_vision_and_image_processing/SCALIAN-clearance.md) |
-| WP4-42 | SCALIAN | [AI Stabilization](componennts/misc/SCALIAN-ai_stabilization.md) |
+| WP4-42 | SCALIAN | [AI Stabilization](components/misc/SCALIAN-ai_stabilization.md) |
 | WP5-03 | SCALIAN | [EZ_Com Safe fleet communication](components/secure_communications/SCALIAN-safe_fleet_comm.md) |
