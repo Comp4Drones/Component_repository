@@ -29,7 +29,6 @@
 | WP3-32_2 | CEA_2 | [Reference Architecture Modelling and Code Generation](components/misc/CEA_2.md) |
 | WP3-36_1 | UDANET | [Smart and predictive energy management system](components/misc/UDANET_1.md) |
 | WP3-36_2 | UDANET | [AI drone system modules](components/misc/UDANET_2.md) |
-
 | WP4-2 | SCALIAN | [EZ_Land Precision landing](components/positioning/SCALIAN-ez_land.md) |
 | WP4-5 | SCALIAN | [AI detection for clearance](components/computer_vision_and_image_processing/SCALIAN-clearance.md) |
 | WP4-42 | SCALIAN | [AI Stabilization](components/misc/SCALIAN-ai_stabilization.md) |
