@@ -1,4 +1,3 @@
-
 name: Test build
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -23,14 +22,8 @@ jobs:
       run: pip3 install --user --upgrade pip &&
            export PATH="$HOME/.local/bin:$PATH"
       
-    - name: Install tag plugin
-      run: pip3 install setuptools
-      
-    - name: Install pyYAML
-      run: pip3 install --ignore-installed PyYAML
-    
-    - name: Install MkDocs
-      run: pip3 install mkdocs
+    - name: Install mkdocs requirements
+      run: pip3 install -r requirements.txt
     
     - name: test mkdocs
       run: $HOME/.local/bin/mkdocs --version
