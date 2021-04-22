@@ -8,27 +8,21 @@ This repository uses [MkDocs](https://www.mkdocs.org/) which allow to build stat
 
 See the markdown syntax : [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
 
-## Installation
-
-See [MkDocs](https://www.mkdocs.org/) to install the necessary tools.
-
-You will need in addition the modules `mkdocs-plugin-tags` and `mkdocs-material`
-
-Those commands may be enough:
-
-```
-pip3 install --ignore-installed PyYAML
-pip3 install mkdocs
-pip3 install git+https://github.com/jldiaz/mkdocs-plugin-tags.git
-pip3 install mkdocs-material
-```
-
-You can then control how the site render with your modifications by launching `mkdocs serve`.
-
 ## Contributing
 
-Make modifications to the source files, control how it is rendered, then make a pull-request.
+Install MkDocs and the necessary requirements:
 
-If you don't know how to make a pull-request, you can also send a patch file to the T3.3 leader.
+```
+pip3 install -r requirements.txt
+```
 
+You can then render the site with your modifications by launching `mkdocs serve`.
+
+You can also generate a PDF from it by setting the `C4D_PDF_EXPORT` environnement variable:
+
+```
+C4D_PDF_EXPORT=1 mkdocs build
+```
+
+See [MkDocs](https://www.mkdocs.org/) for more information.
 
