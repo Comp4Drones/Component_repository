@@ -14,6 +14,3 @@ title: About
 
 Demonstration and validation activities are essential to ensure the quality and relevance of innovations. COMP4DRONES will ease the development of new application and functionalities on the fields of transport, construction, surveillance and inspection, logistics, and agriculture
 
-## How this website is build ?
-
-This website uses [MKDocs](https://www.mkdocs.org/) with the [tags](https://github.com/jldiaz/mkdocs-plugin-tags) plugin.
