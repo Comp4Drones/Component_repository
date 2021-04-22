@@ -1,0 +1,6 @@
+PyYAML
+mkdocs
+git+https://github.com/jldiaz/mkdocs-plugin-tags.git
+mkdocs-material
+mkdocs-with-pdf
+
