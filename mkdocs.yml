@@ -7,6 +7,10 @@ plugins:
   #- tags:
   - search
   - with-pdf:
+      author: Comp4Drones partners
+      copyright: Copyright Comp4Drones partners
+      cover_title: Comp4Drones Component Repository
+      cover_subtitle: provided by the Comp4Drones partners 
       enabled_if_env: C4D_PDF_EXPORT
 
 theme: material
