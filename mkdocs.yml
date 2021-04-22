@@ -4,7 +4,9 @@ site_name: Comp4Drones Component Repository
 #  - About: about.md
 
 plugins:
-  - tags:
+  #- tags:
   - search
+  - with-pdf:
+      enabled_if_env: C4D_PDF_EXPORT
 
 theme: material
