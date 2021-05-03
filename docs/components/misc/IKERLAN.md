@@ -1,5 +1,5 @@
 ---
-title: IKERLAN - Safety function - Pre-Certified SOM
+title: IKERLAN - Mammut Compute Module
 componentId: WP3-01
 tags:
   - Detect and Avoid
