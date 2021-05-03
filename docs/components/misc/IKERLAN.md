@@ -39,3 +39,4 @@ The integration in drone architecture is done using Flight Controller Unit - Com
 in drone systems to aggregate additional computing capabilities to a commercial drone. For instance, it is used in DJI products, PX4-based or ArduPilot based drones.
 
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdiscuss.ardupilot.org%2Fuploads%2Fdefault%2Foriginal%2F2X%2Fd%2Fda4a5fa812b41784bc33335e041d3f0aeaf4788f.jpg&f=1&nofb=1 "RPi to Pixhawk FCU")
+_Pixhawk FMU connected to a RaspberryPi 3 that serves as a companion computer_
