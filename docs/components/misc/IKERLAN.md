@@ -1,5 +1,5 @@
 ---
-title: IKERLAN - Safety function - Pre-Certified SOM
+title: IKERLAN - Mammut Compute Module
 componentId: WP3-01
 tags:
   - Detect and Avoid
@@ -12,17 +12,30 @@ WP3-01
 
 - __ID:__ WP3-01
 - __Contributor:__ IKERLAN
-- __Owner:__ 
-- __Licence:__
+- __Owner:__
+- __Licence:__ Proprietary
 - __expected TRL:__
 - __KET:__
 - __Contact:__
 
-Analysis of current Safety Standards will be done, and appropriate Safety Concept will be conducted on the development of the HW/SW elements necessary to execute the Safety Function.
+The Ikerlan Mammut computer module enables the use of heterogeneous computing capabilities in drone
+systems. These systems traditionally have a limited computing power to execute complex algorithms,
+such as obstacle detection and avoidance, object recognition or neural network execution, and process
+data from sensors such as cameras or LiDARs.  The Mammut computer module enables the integration of
+those functionalities.
 
-The Safety function will integrate several sensors to detect obstacles and avoid causing harm to goods or people. As an end point a HW/SW module that implements the Safety Function will be developed.
+Mammut has been designed with modularity and reusability in mind. For such purposes, it complies with the
+[SMARC standard](https://sget.org/), a SGET association standard which establishes the size, exposed
+interfaces, electric characteristics and pin-out for embedded computer modules. This allows the reuse of
+computer modules in different use-cases, exchanging the carrier board where is plugged. Thanks to this,
+the user can cut the development time, allowing a shorter time to market and overall development
+cost of new products and solutions.
 
-Emergent MPSoC technologies will be used to have powerful computation capabilities.
+In the project scope, provides hardware blueprint for testing and integrating the modular approach of the reference architecture,
+that is composed of different building blocks. The carrier board that has been designed enables the connection of widely-used sensors
+and the communication with various autopilots.
 
-Lidar/radar  D&A  => update next week
+The integration in drone architecture is done using Flight Controller Unit - Companion Computer architecture. This is the default architecture
+in drone systems to aggregate additional computing capabilities to a commercial drone. For instance, it is used in DJI products, PX4-based or ArduPilot based drones.
 
+![](../../img/ikerlan_mammut.png)
