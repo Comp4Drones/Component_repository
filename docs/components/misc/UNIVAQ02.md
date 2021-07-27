@@ -21,11 +21,11 @@ The provided component concerns a robust digital algorithm for the autonomous na
 
 The proposed control algorithms have been tested through simulations. An analysis of the efficacy of the proposed digital controller was performed by considering very hard actuation disturbances affecting the propellers. The simulations show that the proposed robust digital controller achieves very good performances with respect to the same control strategy devoid of the new robust control term. In Fig. 1, the desired trajectory of the UAV is plotted with yellow line and the trajectory of the UAV, in the case of robustified and non-robustified controller is shown with blue and red line, respectively. 
 
-![plot_xyz_ref_trajectory_1](https://user-images.githubusercontent.com/83577527/127151048-872c3309-1521-4bf7-8672-015c14fa98a7.jpg)
+![plot_xyz_ref_trajectory_1](https://github.com/Marv-UNIVAQ/Component_repository/blob/master/docs/img/plot_xyz_ref_trajectory_1.jpg)
 
 In Fig. 2, the trajectory of the swarm of UAVs, in the case of robustified and non-robustified controller, is shown with black and red line, respectively.
 
-![trajectory](https://user-images.githubusercontent.com/83577527/127151220-85e3172b-92a7-4662-ae86-5389a35dd3a7.jpg)
+![trajectory](https://github.com/Marv-UNIVAQ/Component_repository/blob/master/docs/img/trajectory.jpg)
 
 In the proposed figures, the efficacy of the robust controller with respect to the non-robustified one is evident.
 
