@@ -32,6 +32,8 @@
 | WP3-37 | Aitek | [Video and data analytics](components/misc/Aitek.md) |
 | WP4-2 | SCALIAN | [EZ_Land Precision landing](components/positioning/SCALIAN-ez_land.md) |
 | WP4-5 | SCALIAN | [AI detection for clearance](components/computer_vision_and_image_processing/SCALIAN-clearance.md) |
+| WP4-18_A | TEKNE | [Drone-Rover Transponder](components/misc/TEKNE_WP4_18_A.md) |
 | WP4-42 | SCALIAN | [AI Stabilization](components/misc/SCALIAN-ai_stabilization.md) |
 | WP5-03 | SCALIAN | [EZ_Com Safe fleet communication](components/secure_communications/SCALIAN-safe_fleet_comm.md) |
+| WP5-05_A | TEKNE | [LP-WAN for UAV identification and monitoring](components/secure_communications/TEKNE_WP5_05_A.md) |
 
