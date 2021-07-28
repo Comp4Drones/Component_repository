@@ -36,4 +36,5 @@
 | WP4-42 | SCALIAN | [AI Stabilization](components/misc/SCALIAN-ai_stabilization.md) |
 | WP5-03 | SCALIAN | [EZ_Com Safe fleet communication](components/secure_communications/SCALIAN-safe_fleet_comm.md) |
 | WP5-05_A | TEKNE | [LP-WAN for UAV identification and monitoring](components/secure_communications/TEKNE_WP5_05_A.md) |
+| WP4-33 | UNIVAQ | [Autonomy, cooperation, and awareness](components/misc/UNIVAQ_02.md) |
 
