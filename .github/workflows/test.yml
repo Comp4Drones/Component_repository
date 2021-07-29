@@ -33,4 +33,4 @@ jobs:
            pip3 install mkdocs-material
    
     - name: build site
-      run: $HOME/.local/bin/mkdocs build -s
+      run: $HOME/.local/bin/mkdocs build
