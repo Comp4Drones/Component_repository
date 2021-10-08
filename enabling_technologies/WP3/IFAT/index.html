@@ -1,0 +1,1014 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
+    
+    
+      
+        <title>IFAT - Component for trusted communication - Comp4Drones Component Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.24c991ad.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wp3-10-generic-api-and-component-for-trusted-communication" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Comp4Drones Component Repository" class="md-header__button md-logo" aria-label="Comp4Drones Component Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Comp4Drones Component Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IFAT - Component for trusted communication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Comp4Drones Component Repository" class="md-nav__button md-logo" aria-label="Comp4Drones Component Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Comp4Drones Component Repository
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wp3_components_list/" class="md-nav__link">
+        Components list
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Enabling technologies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Enabling technologies" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Enabling technologies
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          WP3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="WP3" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          WP3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ACORDE_1/" class="md-nav__link">
+        ACORDE - UWB based indoor positioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ACORDE_2/" class="md-nav__link">
+        ACORDE - Multi-antenna GNSS/INS based navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Aitek/" class="md-nav__link">
+        Aitek - Video and data analytics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUT/" class="md-nav__link">
+        BUT algorithms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EDI_SoC/" class="md-nav__link">
+        EDI SoC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENAC_paparazzi/" class="md-nav__link">
+        Paparazzi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENSMA_1/" class="md-nav__link">
+        ENSMA - Control components that implement potential barriers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENSMA_2/" class="md-nav__link">
+        ENSMA - Multi-agent swarm control
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HIB/" class="md-nav__link">
+        HIB - Computer Vision Components for drones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          IFAT - Component for trusted communication
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        IFAT - Component for trusted communication
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scope-and-contribution" class="md-nav__link">
+    Scope and contribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    Design and Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Design and Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-design" class="md-nav__link">
+    Architecture Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-driver" class="md-nav__link">
+    Transport Driver:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implemented-generic-hsm-command-library" class="md-nav__link">
+    Implemented generic HSM command library:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IKERLAN/" class="md-nav__link">
+        IKERLAN - Mammut Compute Module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IMEC_1/" class="md-nav__link">
+        IMEC - Hyperspectral payload
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IMEC_2/" class="md-nav__link">
+        IMEC - Hyperspectral image processing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MODIS/" class="md-nav__link">
+        MODIS - multi-sensor positioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCALIAN-ez_chains/" class="md-nav__link">
+        SCALIAN – EZ_Chains Fleet Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UDANET_1/" class="md-nav__link">
+        UDANET - Smart and predictive energy management system
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UDANET_2/" class="md-nav__link">
+        UDANET - AI drone system modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIMORE/" class="md-nav__link">
+        UNIMORE - Onboard Overlay Compute Platform (OOCP)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNISS/" class="md-nav__link">
+        UNISS - Accelerator Design Methodology for OOCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIVAQ/" class="md-nav__link">
+        UNIVAQ - Efficient digital implementation of controllers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UWB/" class="md-nav__link">
+        UWB - Droneport, an autonomous drone battery management system
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          other WP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="other WP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          other WP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/SCALIAN-ai_stabilization/" class="md-nav__link">
+        SCALIAN – AI Stabilization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/SCALIAN-clearance/" class="md-nav__link">
+        SCALIAN – Clearance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/SCALIAN-ez_land/" class="md-nav__link">
+        SCALIAN – EZ_land Precision Landing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/SCALIAN-safe_fleet_comm/" class="md-nav__link">
+        SCALIAN – AI Stabilization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/TEKNE_WP4_18_A/" class="md-nav__link">
+        TEKNE – UAV-UGV Transponder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/TEKNE_WP5_05_A/" class="md-nav__link">
+        TEKNE – LP-WAN for UAV identification and monitoring
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_WP/UNIVAQ_02/" class="md-nav__link">
+        UNIVAQ - Autonomy, cooperation, and awareness
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scope-and-contribution" class="md-nav__link">
+    Scope and contribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-and-implementation" class="md-nav__link">
+    Design and Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Design and Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-design" class="md-nav__link">
+    Architecture Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-driver" class="md-nav__link">
+    Transport Driver:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implemented-generic-hsm-command-library" class="md-nav__link">
+    Implemented generic HSM command library:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="wp3-10-generic-api-and-component-for-trusted-communication">WP3-10 - Generic API and component for trusted communication</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>WP3-10</td>
+</tr>
+<tr>
+<td>Contributor</td>
+<td>IFAT</td>
+</tr>
+<tr>
+<td>Levels</td>
+<td>Function</td>
+</tr>
+<tr>
+<td>Require</td>
+<td>HSM-chip</td>
+</tr>
+<tr>
+<td>Provide</td>
+<td>C-based API-lib for accessing HSM hardware-functionality</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>API-call + generic byte-array (e.g. data to be signed)</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Low-level I2C commands, return data to API</td>
+</tr>
+<tr>
+<td>C4D building block</td>
+<td>Communication</td>
+</tr>
+<tr>
+<td>TRL</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../../images/wp3-10_01.png" /><br />
+Figure 44: Building block diagram for WP3-10</p>
+<h2 id="scope-and-contribution">Scope and contribution</h2>
+<p>One – small yet important – piece of a jigsaw of an overall drone architecture is protecting the data to be transmitted via various wireless communication channels, and as a consequence thereof the required remote authentication. Protecting the communication link of a drone to any other end point (e.g. other drone, base station, and infrastructure) is important. Otherwise, the communication partner cannot verify if the communication link is established to the partner intended to. Further, in is required to maintain integrity as well as confidentiality. Therefore, in many embedded systems, a protected communication link is established via TLS between the communication partners. However, in today’s embedded systems, all security-critical TLS mechanisms are typically purely executed in software in the microcontroller alongside the embedded OS and various applications. This conventional system design also makes the pure software-based TLS prone to software and side-channel attacks. Therefore, to minimize the attack vector, IFAT is developing an enhanced security concept, in which the TLS handshake is supported with a Hardware Security Module (HSM, alternatively also denoted as Secure Element (SE)) in order to perform certain security critical operations and store confidential key material. 
+While in the course of WP5 IFAT is working on the higher-level implementation of the required security-specific algorithms and libraries, in the course of WP3 IFAT is working different aspects of defining a standardized lower-level API for the easy and modular integration of such a hardware security component into any modular drone architecture. The main purpose of this (low-level) API is to make the required functionalities of an integrated HSM accessible to various drone software-frameworks, which typically are executed on a general purpose microcontroller in C programming language (such as ROS for example). Furthermore, the API is designed in a generic way, in the sense that the same API shall be usable for more than just one hardware security device (since today most new generation/releases of HSM devices have slightly different command sets). In this way, within WP3 IFAT provides a concept to integrate hardware security components into drones with an API to be usable for future drone system integrators for various security relevant tasks. This concept will be described in more details in the paragraphs below.</p>
+<h2 id="design-and-implementation">Design and Implementation</h2>
+<p>To access the functionality of an HSM, a command library needs to be designed and implemented. An important requirement in this regard is modularity. This is important to prevent code duplication in future developments and easy replacement of HSMs. Based on that design decision, various different use cases can be addressed due to the high reusability. Therefore, the API for the command library used to establish a trusted communication channel shall be design in a generic way. Additional requirements would be a small memory footprint and multi-threading support. First, many embedded systems have limited resources, and second, the driver should not use any blocking functions, because this would be disastrous in multi-threaded environments. The latter requires synchronization between the API function.</p>
+<h3 id="architecture-design">Architecture Design</h3>
+<p>As depicted in Figure 45 the multi-threaded architecture is split into two main parts, the transport driver and the command library. The transport driver is communicating with the HSM, whereas the command library exposes the functionality to the higher level user application.
+Splitting the architecture in transport driver and command library allows being independent of the hardware, since the provided features of the hardware are different, and the command set can easily be extended. Executing a specific API function results in a serialized command which is added into the command queue by the command library. The transport driver processes the command and relays it via the I2C driver to the HSM, where it is executed and passed back via the transport driver to the command library and subsequently to the user application.</p>
+<h3 id="transport-driver">Transport Driver:</h3>
+<p>The implemented driver (SW-Library) reflects similar layers, which are depicted in yellow in Figure 45. The physical layer mainly consists of a set of registers to communicate with the two surrounding modules, the I²C driver and the data link layer. The data link layer is providing reliability to the communication channel by adding checksums and sequence numbers. Network and transport layer are combined in one module for simplification, since they share the same header structure. The main task of the transport layer is the packet fragmentation. The command queue worker is the direct interface to the command library and handles the state machine to communicate with the HSM. The chip control is out of scope for this deliverable, but it handles the power management of the HSM.</p>
+<h3 id="implemented-generic-hsm-command-library">Implemented generic HSM command library:</h3>
+<p>When the user application calls an API function, the command library serializes with the APDU-builder, into the standardized “APDU”1 format and submits it to the command queue. The command format is different for various devices, but devices from one product family mostly share the same format. This shows again the importance of splitting the architecture into the lower level transport driver and the command library to offer a generic solution. As depicted in Figure 45, the command library offers a basic set of functions which is used by the user application to establish a trusted communication channel.
+This generic library-abstraction a) helps to ease the integration effort for drone system integrators to integrate a HSM component into their drones, and b) provides a more generic API (as compared to state-of-the-art) in the way that the API is not limited to just one specific version of HSM chip-variant. In the case of IFAT, this API is planned to support different Infineon hardware-security chip family derivates and also upcoming versions.</p>
+<p><img alt="" src="../../../images/wp3-10_02.png" /><br />
+Figure 45: Generic architecture design and implemented SW-API for integrating Infineon HSM modules into a drone</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../HIB/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HIB - Computer Vision Components for drones" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HIB - Computer Vision Components for drones
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../IKERLAN/" class="md-footer__link md-footer__link--next" aria-label="Next: IKERLAN - Mammut Compute Module" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              IKERLAN - Mammut Compute Module
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.bc35569b.min.js"></script>
+      
+    
+  </body>
+</html>
